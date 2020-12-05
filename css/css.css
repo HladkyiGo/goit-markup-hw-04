@@ -147,18 +147,61 @@ img {
   height: 44px;
   border-radius: 50%;
 }
-.social-link-item:hover
-  .social-list-icon
-  .social-link-item:focus
-  .social-list-icon {
-  fill: var(--accent-color);
+
+.social-link-item:hover {
+  background-color: var(--accent-color);
+}
+
+.social-link-item:hover .social-list-icon,
+.social-link-item:focus .social-list-icon {
+  fill: var(--white-text);
 }
 .social-list-icon {
+  fill: #afb1b8;
   width: 20px;
   height: 20px;
 }
 
 /* ===========Команда кінець==========*/
+
+/* ===========Клієнти==========*/
+
+.client.list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.client-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  outline: solid #afb1b8 1px;
+}
+
+.client-item:hover,
+.client-item:focus {
+  outline: solid var(--accent-color) 1px;
+}
+.client-item-icon {
+  fill: #afb1b8;
+  width: 50px;
+  height: 50px;
+}
+
+.client-item-link:hover .client-item-icon,
+.client-item-link:focus .client-item-icon {
+  fill: var(--accent-color);
+}
+
+.section-client-items {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* ===========Клієнти кінець==========*/
 
 .addres-text {
   margin-bottom: 9px;
@@ -344,19 +387,23 @@ a {
 }
 
 /* Стилізація підвалу(footer)*/
+.footer {
+  background-color: #2f303a;
+}
+
 .logo-white {
-  color: brown /* var(--white-text)*/;
+  color: var(--white-text);
 }
 
 .addres-text {
-  color: tomato /*var{var(--white-text)}*/;
+  color: var{var(--white-text)};
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 .footer .link {
-  color: red; /* rgba(255, 255, 255, 0.6);*/
+  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.19;
   letter-spacing: 0.03em;
