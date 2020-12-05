@@ -121,7 +121,7 @@ img {
   margin-bottom: 10px;
 }
 .team-items .text {
-  margin-bottom: 30px;
+  
 }
 .team-item {
   text-align: center;
@@ -136,6 +136,7 @@ img {
 .social-list {
   display: flex;
   justify-content: space-between;
+ 
 }
 
 .social-link-item {
@@ -158,9 +159,14 @@ img {
 }
 .social-list-icon {
   fill: #afb1b8;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
 }
+
+.social-list-item{
+  margin-bottom: 30px;
+}
+
 
 /* ===========Команда кінець==========*/
 
@@ -384,6 +390,7 @@ a {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 /* Стилізація підвалу(footer)*/
