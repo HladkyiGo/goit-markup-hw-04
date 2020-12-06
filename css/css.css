@@ -194,9 +194,6 @@ img {
   padding-top: 50px;
 }
 
-.client-item {
-}
-
 .client-item:hover,
 .client-item:focus {
   outline: solid var(--accent-color) 1px;
@@ -516,6 +513,7 @@ a {
 }
 .section-main-portfolio {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .items-button {
