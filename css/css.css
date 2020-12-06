@@ -37,6 +37,8 @@ img {
   display: block;
 }
 
+/*==================Header============================*/
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -69,6 +71,12 @@ img {
   margin-right: 50px;
 }
 
+.navigation-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .site-nav.list {
   display: flex;
 }
@@ -77,6 +85,16 @@ img {
   display: flex;
   margin-left: auto;
 }
+
+.mail-icon {
+  align-items: center;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: #afb1b8;
+}
+
+/*==================End Header============================*/
 
 .section.advant {
   display: flex;
@@ -120,12 +138,12 @@ img {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.team-items .text {
-  
-}
+
 .team-item {
   text-align: center;
-  outline: solid tomato;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
   background-color: #fff;
 }
 
@@ -133,16 +151,19 @@ img {
   margin-bottom: 50px;
 }
 
+.team-description {
+  padding: 30px 32px;
+}
+
 .social-list {
   display: flex;
-  justify-content: space-between;
- 
+  justify-content: center;
 }
 
 .social-link-item {
   background-color: var(--white-text);
+  justify-content: space-between;
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
@@ -163,11 +184,6 @@ img {
   height: 40px;
 }
 
-.social-list-item{
-  margin-bottom: 30px;
-}
-
-
 /* ===========Команда кінець==========*/
 
 /* ===========Клієнти==========*/
@@ -179,12 +195,6 @@ img {
 }
 
 .client-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 90px;
-  outline: solid #afb1b8 1px;
 }
 
 .client-item:hover,
@@ -193,7 +203,6 @@ img {
 }
 .client-item-icon {
   fill: #afb1b8;
-  width: 50px;
   height: 50px;
 }
 
@@ -205,6 +214,16 @@ img {
 .section-client-items {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.client-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: solid #afb1b8 1px;
+  border-radius: 4px;
 }
 
 /* ===========Клієнти кінець==========*/
@@ -305,9 +324,20 @@ a {
   color: var(--accent-color);
 }
 
+.navigation-item:hover .mail-icon {
+  fill: var(--accent-color);
+}
+
 /*Hero*/
 .hero {
+  display: block;
   text-align: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: auto;
+  max-width: 1600px;
+  height: 600px;
   padding-top: 200px;
   padding-bottom: 280px;
   background-image: linear-gradient(
@@ -315,15 +345,11 @@ a {
       rgba(47, 48, 58, 0.4)
     ),
     url(../img/bg.jpg);
-
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .hero-title {
   margin-top: 0px;
   margin-bottom: 0px;
-  color: red /*var(--white-text)*/;
-  background-color: tomato;
+  color: var(--white-text);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -377,6 +403,17 @@ a {
   letter-spacing: 0.03em;
 }
 
+.advantages-item-icon {
+  display: block;
+
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px 25px 100px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
 /* team*/
 .team .title {
   color: var(--title-text-color);
@@ -403,11 +440,15 @@ a {
 }
 
 .addres-text {
-  color: var{var(--white-text)};
+  color: var(--white-text);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.addres-container {
+  margin-right: 70px;
 }
 .footer .link {
   color: rgba(255, 255, 255, 0.6);
@@ -415,7 +456,40 @@ a {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+.footer-text {
+  color: var(--white-text);
+}
+.footer-social-link {
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-right: 10px;
+  margin-top: 20px;
+}
 
+.footer-social-icon {
+  display: flex;
+  fill: var(--white-text);
+  width: 40px;
+  height: 40px;
+}
+
+.footer > .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-social-items {
+  display: flex;
+}
 /* portfolio*/
 
 .filter {
@@ -463,6 +537,16 @@ a {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.project-link {
+  display: block;
+}
+
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-item:nth-child(3n) {
