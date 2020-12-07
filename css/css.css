@@ -339,13 +339,13 @@ a {
   display: block;
   text-align: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  
   background-position: center;
   margin: auto;
   max-width: 1600px;
   height: 600px;
-  padding-top: 100px;
-  padding-bottom: 180px;
+  padding-top: 200px;
+  padding-bottom: 280px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
