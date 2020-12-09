@@ -506,6 +506,8 @@ a {
   letter-spacing: 0.03em;
   padding-left: 22px;
   padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   border:solid 0px;
   background-color: #F5F4FA;
   border-radius: 4px;
